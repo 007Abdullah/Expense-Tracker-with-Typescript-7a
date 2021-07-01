@@ -17,9 +17,11 @@ const Balance = () => {
 
     return (
         <React.Fragment>
-            <h1>Your Balance</h1>
-            <br />
-            <h3>{balance}</h3>
+            <span style={{ color: 'black' }}>
+                <b>Your Balance
+                    <br />
+                    {balance}</b>
+            </span>
         </React.Fragment>
     )
 }
