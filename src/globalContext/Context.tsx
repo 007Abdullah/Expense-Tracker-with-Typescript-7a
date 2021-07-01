@@ -3,7 +3,7 @@ import TransactionReducer from './Reducer';
 import { TransactionTypes } from '../Types';
 
 const initialState = {
-    transactions: [{ id: 1, title: 'Salary', amount: 2000 }],
+    transactions: [{ id: 1, title: 'Cash', amount: 2000 }, { id: 2, title: 'Book', amount: 5000 }, { id: 3, title: 'Camera', amount: 10000 }],
     addTransactions: (transactions: TransactionTypes) => { },
     deleteTransactions: (id: number) => { },
 };

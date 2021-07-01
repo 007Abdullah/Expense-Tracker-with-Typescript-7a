@@ -46,8 +46,7 @@ function App() {
                   <Balance />
                   <IncomeExpense />
                   <History />
-                  {/*<br />
-                <Addtransaction /> */}
+                  <Addtransaction />
                 </Provider>
               </Paper>
             </div>

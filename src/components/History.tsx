@@ -38,9 +38,7 @@ const History = () => {
                             <React.Fragment key={index}>
                                 <li className={classes.lilist}>
                                     <span>{transObj.title}</span>
-                                    <span>{transObj.amount}
-
-                                    </span>
+                                    <span>{transObj.amount}</span>
                                     <span onClick={(id) => deleteTransactions(transObj.id)}>
                                         X
                                     </span>

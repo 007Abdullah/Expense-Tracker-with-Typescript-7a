@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../globalContext/Context';
 
+
+
 const Addtransaction: React.FC = () => {
 
     const { addTransactions } = useContext(GlobalContext);
@@ -10,7 +12,6 @@ const Addtransaction: React.FC = () => {
 
     function handleSubmit(e: { preventDefault: () => void }) {
         e.preventDefault();
-
         const newTransaction = {
             id: Math.floor(Math.random() * 100000000),
             title,
