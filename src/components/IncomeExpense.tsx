@@ -22,7 +22,6 @@ const IncomeExpense: React.FC = () => {
                 <h3>INCOME <br />{getIcome}</h3>
                 <h3>EXPENSE <br />{Getexpense}</h3>
             </div>
-
         </React.Fragment>
     )
 }
