@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto'
   },
   paper: {
-    width: '30%',
+    width: 'auto',
     height: 'auto',
     padding: theme.spacing(2),
     color: theme.palette.text.secondary,
@@ -40,7 +40,7 @@ function App() {
         <Grid container>
           <Grid item xs={12}>
             <div style={{ padding: '50px', display: 'flex', justifyContent: 'center' }}>
-              <Paper className={classes.paper} elevation={3}>
+              <Paper className={classes.paper} elevation={15}>
                 <h1 style={{ fontSize: '1.5em', textAlign: 'center', color: 'floralwhite', fontFamily: 'Serif', textTransform: 'uppercase', textShadow: '1px 1px 1px #919191,1px 2px 1px #919191,1px 3px 1px #919191,1px 4px 1px #919191,1px 5px 1px #919191,1px 6px 1px #919191,1px 7px 1px #919191,1px 8px 1px #919191,1px 9px 1px #919191,1px 10px 1px #919191,1px 18px 6px rgba(16,16,16,0.4),1px 22px 10px rgba(16,16,16,0.2)' }}>Expense Tracker</h1>
                 <Provider>
                   <br />

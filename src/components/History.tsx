@@ -4,12 +4,12 @@ import { GlobalContext } from '../globalContext/Context';
 
 const useStyles = makeStyles((theme) => ({
     ullist: {
-        width: '80%',
+        width: 'auto',
         listStyle: 'none',
         color: 'black',
         margin: '0',
         padding: '0',
-        marginLeft: '40px'
+        marginLeft: 'auto'
     },
     lilist: {
         display: 'flex',

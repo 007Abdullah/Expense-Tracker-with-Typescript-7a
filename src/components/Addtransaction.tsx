@@ -46,7 +46,7 @@ const Addtransaction: React.FC = () => {
 
     return (
         <React.Fragment>
-            <h1 style={{ color: 'black', marginLeft: '40px', fontSize: '1.5em' }}>Add New Transactions</h1>
+            <h1 style={{ color: 'black', marginLeft: '40px', fontSize: '1.2em', textAlign: 'start' }}>Add New Transactions</h1>
             <hr style={{ width: '80%' }} />
             <form onSubmit={handleSubmit}>
                 <div className={classes.text}>
