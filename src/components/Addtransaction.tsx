@@ -1,10 +1,32 @@
+import { makeStyles } from '@material-ui/core';
 import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../globalContext/Context';
 
-
+const useStyle = makeStyles((theme) => ({
+    text: {
+        width: '80%',
+        color: 'black',
+        display: 'flex',
+        justifyContent: 'space-between',
+        margin: theme.spacing(1),
+        marginLeft: '40px'
+    },
+    amount: {
+        width: '80%',
+        color: 'black',
+        display: 'flex',
+        justifyContent: 'space-between',
+        margin: theme.spacing(1),
+        marginLeft: '40px'
+    },
+    btn: {
+        textAlign: 'center',
+    }
+}))
 
 const Addtransaction: React.FC = () => {
 
+    const classes = useStyle();
     const { addTransactions } = useContext(GlobalContext);
 
     const [title, setTitle] = useState<string>("");
@@ -24,17 +46,21 @@ const Addtransaction: React.FC = () => {
 
     return (
         <React.Fragment>
-            <h1>Add New Transactions</h1>
+            <h1 style={{ color: 'black', marginLeft: '40px', fontSize: '1.5em' }}>Add New Transactions</h1>
+            <hr style={{ width: '80%' }} />
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className={classes.text}>
                     <label>Text</label>
                     <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
                 </div>
-                <div>
-                    <label>Amount</label>
+                <div className={classes.amount}>
+                    <label>Enter Amount</label>
                     <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} required />
                 </div>
-                <button>Add Transaction</button>
+                <br />
+                <div className={classes.btn}>
+                    <button style={{ color: 'black', padding: '10px' }}>Add Transaction</button>
+                </div>
             </form>
         </React.Fragment>
     )

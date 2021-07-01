@@ -20,7 +20,7 @@ const IncomeExpense: React.FC = () => {
         <React.Fragment>
             <div style={{ color: 'black', width: '80%', display: 'flex', justifyContent: 'space-around', backgroundColor: 'white', margin: '0 auto', marginTop: '20px', boxShadow: '0 0 10px gray' }}>
                 <h3>INCOME <br />{getIcome}</h3>
-                <h3>EXPENSE <br />{Getexpense}</h3>
+                <h3>EXPENSE <br /><Getexpense /></h3>
             </div>
         </React.Fragment>
     )

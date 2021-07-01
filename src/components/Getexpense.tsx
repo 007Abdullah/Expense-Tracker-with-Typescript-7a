@@ -18,7 +18,7 @@ const Getexpense: React.FC = () => {
 
     return (
         <React.Fragment>
-
+            {getExpense}
         </React.Fragment>
     )
 }
